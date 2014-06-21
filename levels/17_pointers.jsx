@@ -1,4 +1,4 @@
-#BEGIN_PROPERTIES#
+/*#BEGIN_PROPERTIES#*/
 {
     "version": "1.2.1",
     "commandsIntroduced":
@@ -8,7 +8,7 @@
         "showDrawingCanvas": true
     }
 }
-#END_PROPERTIES#
+/*#END_PROPERTIES#*/
 /***************
  * pointers.js *
  ***************
@@ -20,7 +20,7 @@
  */
 
 function startLevel(map) {
-#START_OF_START_LEVEL#
+/*#START_OF_START_LEVEL#*/
     function shuffle(o){ //v1.0 [http://bit.ly/1l6LGQT]
         for(var j, x, i = o.length; i; j = Math.floor(Math.random() * i),
             x = o[--i], o[i] = o[j], o[j] = x);
@@ -75,7 +75,7 @@ function startLevel(map) {
             t2.setTarget(t1);
         }
 
-#BEGIN_EDITABLE#
+/*#BEGIN_EDITABLE#*/
         // TODO find a way to remove the API docs
         // wouldn't want the 'good doctor' to find
         // out about map.getCanvasCoords()...
@@ -84,9 +84,9 @@ function startLevel(map) {
 
 
 
-#END_EDITABLE#
+/*#END_EDITABLE#*/
     }
-#END_OF_START_LEVEL#
+/*#END_OF_START_LEVEL#*/
 }
 
 function validateLevel(map) {

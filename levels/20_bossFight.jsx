@@ -1,4 +1,4 @@
-#BEGIN_PROPERTIES#
+/*#BEGIN_PROPERTIES#*/
 {
     "version": "1.2",
     "commandsIntroduced":
@@ -11,7 +11,7 @@
         "quickValidateCallback": true
     }
 }
-#END_PROPERTIES#
+/*#END_PROPERTIES#*/
 
 /*****************
  * bossFight.js *
@@ -24,7 +24,7 @@
  */
 
 function startLevel(map) {
-#START_OF_START_LEVEL#
+/*#START_OF_START_LEVEL#*/
 	map.defineObject('boss', {
         'type': 'dynamic',
         'symbol': '⊙',
@@ -109,7 +109,7 @@ function startLevel(map) {
     map.placeObject(28, 6, 'boss');
     map.placeObject(30, 6, 'boss');
 
-#BEGIN_EDITABLE#
+/*#BEGIN_EDITABLE#*/
 
 
 
@@ -128,9 +128,9 @@ function startLevel(map) {
 
 
 
-#END_EDITABLE#
+/*#END_EDITABLE#*/
 
-#END_OF_START_LEVEL#
+/*#END_OF_START_LEVEL#*/
 }
 
 function validateLevel(map) {

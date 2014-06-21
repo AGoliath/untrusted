@@ -1,9 +1,9 @@
-#BEGIN_PROPERTIES#
+/*#BEGIN_PROPERTIES#*/
 {
     "version": "1.2.1",
     "music": "Brazil"
 }
-#END_PROPERTIES#
+/*#END_PROPERTIES#*/
 /**************
  * credits.js *
  *************
@@ -37,7 +37,7 @@
  */
 
 function startLevel(map) {
-#START_OF_START_LEVEL#
+/*#START_OF_START_LEVEL#*/
     var credits = [
         [15, 1, "U N T R U S T E D"],
         [20, 2, "- or -"],
@@ -87,5 +87,5 @@ function startLevel(map) {
 
     map.timeout(function () {drawCredits(0);}, 4000);
 
-#END_OF_START_LEVEL#
+/*#END_OF_START_LEVEL#*/
 }

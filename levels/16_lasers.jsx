@@ -1,4 +1,4 @@
-#BEGIN_PROPERTIES#
+/*#BEGIN_PROPERTIES#*/
 {
     "version": "1.2.3",
     "commandsIntroduced":
@@ -10,7 +10,7 @@
         "showDrawingCanvas": true
     }
 }
-#END_PROPERTIES#
+/*#END_PROPERTIES#*/
 /*************
  * lasers.js *
  *************
@@ -25,7 +25,7 @@ function getRandomInt(min, max) {
 }
 
 function startLevel(map) {
-#START_OF_START_LEVEL#
+/*#START_OF_START_LEVEL#*/
     map.placePlayer(0, 0);
     map.placeObject(map.getWidth()-1, map.getHeight()-1, 'exit');
     var player = map.getPlayer();
@@ -57,7 +57,7 @@ function startLevel(map) {
             }
         });
 
-#BEGIN_EDITABLE#
+/*#BEGIN_EDITABLE#*/
         // using canvas to draw the line
         var ctx = map.getCanvasContext();
         ctx.beginPath();
@@ -66,11 +66,11 @@ function startLevel(map) {
         ctx.moveTo(x1, y1);
         ctx.lineTo(x2, y2);
         ctx.stroke();
-#END_EDITABLE#
+/*#END_EDITABLE#*/
 
     }
 
-#BEGIN_EDITABLE#
+/*#BEGIN_EDITABLE#*/
 
 
 
@@ -80,8 +80,8 @@ function startLevel(map) {
 
 
 
-#END_EDITABLE#
-#END_OF_START_LEVEL#
+/*#END_EDITABLE#*/
+/*#END_OF_START_LEVEL#*/
 }
 
 function validateLevel(map) {

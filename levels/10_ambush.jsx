@@ -1,10 +1,10 @@
-#BEGIN_PROPERTIES#
+/*#BEGIN_PROPERTIES#*/
 {
     "version": "1.2",
     "commandsIntroduced": [],
     "music": "Come and Find Me"
 }
-#END_PROPERTIES#
+/*#END_PROPERTIES#*/
 /*************
  * ambush.js *
  *************
@@ -20,7 +20,7 @@
  */
 
 function startLevel(map) {
-#START_OF_START_LEVEL#
+/*#START_OF_START_LEVEL#*/
     function moveToward(obj, type) {
         var target = obj.findNearest(type);
         var leftDist = obj.getX() - target.x;
@@ -52,9 +52,9 @@ function startLevel(map) {
             player.killedBy('an attack drone');
         },
         'behavior': function (me) {
-#BEGIN_EDITABLE#
+/*#BEGIN_EDITABLE#*/
             moveToward(me, 'player');
-#END_EDITABLE#
+/*#END_EDITABLE#*/
         }
     });
 
@@ -66,9 +66,9 @@ function startLevel(map) {
             player.killedBy('a reinforcement drone');
         },
         'behavior': function (me) {
-#BEGIN_EDITABLE#
+/*#BEGIN_EDITABLE#*/
             me.move('left');
-#END_EDITABLE#
+/*#END_EDITABLE#*/
         }
     });
 
@@ -80,9 +80,9 @@ function startLevel(map) {
             player.killedBy('a defense drone');
         },
         'behavior': function (me) {
-#BEGIN_EDITABLE#
+/*#BEGIN_EDITABLE#*/
 
-#END_EDITABLE#
+/*#END_EDITABLE#*/
         }
     });
 
@@ -119,7 +119,7 @@ function startLevel(map) {
     map.placeObject(26, 13, 'reinforcementDrone');
 
     map.placeObject(map.getWidth()-1, 12, 'exit');
-#END_OF_START_LEVEL#
+/*#END_OF_START_LEVEL#*/
 }
 
 function validateLevel(map) {

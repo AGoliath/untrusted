@@ -1,11 +1,11 @@
-#BEGIN_PROPERTIES#
+/*#BEGIN_PROPERTIES#*/
 {
     "version": "1.2",
     "commandsIntroduced":
         ["map.createFromGrid", "player.removeItem"],
     "music": "Chip"
 }
-#END_PROPERTIES#
+/*#END_PROPERTIES#*/
 /********************
  * crispsContest.js *
  ********************
@@ -21,7 +21,7 @@
  */
 
 function startLevel(map) {
-#START_OF_START_LEVEL#
+/*#START_OF_START_LEVEL#*/
     map.defineObject('redLock', {
         'symbol': String.fromCharCode(0x2297),
         'color': 'red',
@@ -102,7 +102,7 @@ function startLevel(map) {
         'b': 'blueKey',
         'y': 'yellowKey'
     }, 17, 6);
-#END_OF_START_LEVEL#
+/*#END_OF_START_LEVEL#*/
 }
 
 function validateLevel(map) {

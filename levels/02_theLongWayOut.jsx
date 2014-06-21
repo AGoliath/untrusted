@@ -1,10 +1,10 @@
-#BEGIN_PROPERTIES#
+/*#BEGIN_PROPERTIES#*/
 {
     "version": "1.2",
     "commandsIntroduced": ["ROT.Map.DividedMaze", "player.atLocation"],
     "music": "gurh"
 }
-#END_PROPERTIES#
+/*#END_PROPERTIES#*/
 /********************
  * theLongWayOut.js *
  ********************
@@ -15,13 +15,13 @@
  */
 
 function startLevel(map) {
-#START_OF_START_LEVEL#
+/*#START_OF_START_LEVEL#*/
     map.placePlayer(7, 5);
 
     var maze = new ROT.Map.DividedMaze(map.getWidth(), map.getHeight());
-#BEGIN_EDITABLE#
+/*#BEGIN_EDITABLE#*/
 
-#END_EDITABLE#
+/*#END_EDITABLE#*/
     maze.create( function (x, y, mapValue) {
 
         // don't write maze over player
@@ -41,9 +41,9 @@ function startLevel(map) {
     map.placeObject(map.getWidth()-6, map.getHeight()-4, 'block');
     map.placeObject(map.getWidth()-5, map.getHeight()-5, 'block');
     map.placeObject(map.getWidth()-5, map.getHeight()-3, 'block');
-#BEGIN_EDITABLE#
+/*#BEGIN_EDITABLE#*/
 
-#END_EDITABLE#
+/*#END_EDITABLE#*/
     map.placeObject(map.getWidth()-5, map.getHeight()-4, 'exit');
-#END_OF_START_LEVEL#
+/*#END_OF_START_LEVEL#*/
 }

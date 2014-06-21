@@ -1,4 +1,4 @@
-#BEGIN_PROPERTIES#
+/*#BEGIN_PROPERTIES#*/
 {
     "version": "1.2",
     "commandsIntroduced":
@@ -6,7 +6,7 @@
          "map.validateExactlyXManyObjects"],
     "music": "Obscure Terrain"
 }
-#END_PROPERTIES#
+/*#END_PROPERTIES#*/
 /************************
  * validationEngaged.js *
  ************************
@@ -20,9 +20,9 @@
  */
 
 function startLevel(map) {
-#START_OF_START_LEVEL#
+/*#START_OF_START_LEVEL#*/
     map.placePlayer(map.getWidth()-7, map.getHeight()-5);
-#BEGIN_EDITABLE#
+/*#BEGIN_EDITABLE#*/
 
     for (y = 10; y <= map.getHeight() - 3; y++) {
         map.placeObject(5, y, 'block');
@@ -33,10 +33,10 @@ function startLevel(map) {
         map.placeObject(x, 10, 'block');
         map.placeObject(x, map.getHeight() - 3, 'block');
     }
-#END_EDITABLE#
+/*#END_EDITABLE#*/
 
     map.placeObject(7, 5, 'exit');
-#END_OF_START_LEVEL#
+/*#END_OF_START_LEVEL#*/
 }
 
 function validateLevel(map) {

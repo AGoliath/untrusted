@@ -1,4 +1,4 @@
-#BEGIN_PROPERTIES#
+/*#BEGIN_PROPERTIES#*/
 {
     "version": "1.2",
     "commandsIntroduced":
@@ -9,7 +9,7 @@
     },
     "music": "Night Owl"
 }
-#END_PROPERTIES#
+/*#END_PROPERTIES#*/
 /*******************
  * intoTheWoods.js *
  *******************
@@ -27,7 +27,7 @@
  */
 
 function startLevel(map) {
-#START_OF_START_LEVEL#
+/*#START_OF_START_LEVEL#*/
     // NOTE: In this level alone, map.placeObject is allowed to
     //overwrite existing objects.
 
@@ -114,7 +114,7 @@ function startLevel(map) {
     map.getPlayer().setPhoneCallback(functionList[#{#"movePlayerToExit"#}#]);
 
     map.placeObject(map.getWidth()-1, map.getHeight()-1, 'exit');
-#END_OF_START_LEVEL#
+/*#END_OF_START_LEVEL#*/
 }
 
 function validateLevel(map) {

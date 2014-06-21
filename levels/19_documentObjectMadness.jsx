@@ -1,4 +1,4 @@
-#BEGIN_PROPERTIES#
+/*#BEGIN_PROPERTIES#*/
 {
     "version": "1.2.2",
     "commandsIntroduced":
@@ -13,7 +13,7 @@
         "showDummyDom": true
     }
 }
-#END_PROPERTIES#
+/*#END_PROPERTIES#*/
 /****************************
  * documentObjectMadness.js *
  ****************************
@@ -37,7 +37,7 @@ function objective(map) {
 }
 
 function startLevel(map) {
-#START_OF_START_LEVEL#
+/*#START_OF_START_LEVEL#*/
     var html = "<div class='container'>" +
     "<div style='width: 600px; height: 500px; background-color: white; font-size: 10px;'>" +
         "<center><h1>Department of Theoretical Computation</h1></center>" +
@@ -153,5 +153,5 @@ function startLevel(map) {
     map.placeObject(map.getWidth() - 2, map.getHeight() - 2, 'adversary');
 
     map.createFromDOM($dom);
-#END_OF_START_LEVEL#
+/*#END_OF_START_LEVEL#*/
 }

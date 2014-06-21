@@ -1,4 +1,4 @@
-#BEGIN_PROPERTIES#
+/*#BEGIN_PROPERTIES#*/
 {
     "version": "1.2",
     "commandsIntroduced":
@@ -7,7 +7,7 @@
          "player.setPhoneCallback"],
     "music": "Y"
 }
-#END_PROPERTIES#
+/*#END_PROPERTIES#*/
 /*************
 * colors.js *
  *************
@@ -21,7 +21,7 @@
  */
 
 function startLevel(map) {
-#START_OF_START_LEVEL#
+/*#START_OF_START_LEVEL#*/
     map.placePlayer(0, 12);
 
     map.placeObject(5, 12, 'phone');
@@ -30,7 +30,7 @@ function startLevel(map) {
     // as defined by player.setPhoneCallback() below.
     // The function phone callback is bound to Q or Ctrl-6.
     map.getPlayer().setPhoneCallback(function () {
-#BEGIN_EDITABLE#
+/*#BEGIN_EDITABLE#*/
         var player = map.getPlayer();
 
         player.setColor('#f00');
@@ -39,7 +39,7 @@ function startLevel(map) {
 
 
 
-#END_EDITABLE#
+/*#END_EDITABLE#*/
     });
 
 
@@ -86,7 +86,7 @@ function startLevel(map) {
             map.setSquareColor(x, y, '#080');
         }
     }
-#END_OF_START_LEVEL#
+/*#END_OF_START_LEVEL#*/
 }
 
 function validateLevel(map) {

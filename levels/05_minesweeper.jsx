@@ -1,10 +1,10 @@
-#BEGIN_PROPERTIES#
+/*#BEGIN_PROPERTIES#*/
 {
     "version": "1.2.1",
     "commandsIntroduced": ["map.setSquareColor"],
     "music": "cloudy_sin"
 }
-#END_PROPERTIES#
+/*#END_PROPERTIES#*/
 /******************
  * minesweeper.js *
  ******************
@@ -23,7 +23,7 @@ function getRandomInt(min, max) {
 }
 
 function startLevel(map) {
-#START_OF_START_LEVEL#
+/*#START_OF_START_LEVEL#*/
     for (x = 0; x < map.getWidth(); x++) {
         for (y = 0; y < map.getHeight(); y++) {
             map.setSquareColor(x, y, '#f00');
@@ -39,14 +39,14 @@ function startLevel(map) {
             && (x != map.getWidth() - 5 || y != 5)) {
             // don't place mine over exit or player!
             map.placeObject(x, y, 'mine');
-#BEGIN_EDITABLE#
+/*#BEGIN_EDITABLE#*/
 
-#END_EDITABLE#
+/*#END_EDITABLE#*/
         }
     }
 
     map.placeObject(2, map.getHeight() - 1, 'exit');
-#END_OF_START_LEVEL#
+/*#END_OF_START_LEVEL#*/
 }
 
 function validateLevel(map) {

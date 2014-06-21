@@ -1,11 +1,11 @@
-#BEGIN_PROPERTIES#
+/*#BEGIN_PROPERTIES#*/
 {
     "version": "1.2",
     "commandsIntroduced": [],
     "music": "The_Waves_Call_Her_Name",
     "startingMessage": "You have lost the Algorithm!"
 }
-#END_PROPERTIES#
+/*#END_PROPERTIES#*/
 /**************************
  * exceptionalCrossing.js *
  **************************
@@ -26,7 +26,7 @@
  */
 
 function startLevel(map) {
-#START_OF_START_LEVEL#
+/*#START_OF_START_LEVEL#*/
     map.displayChapter('Chapter 3\nBetrayal');
 
     map.placePlayer(0, 0);
@@ -47,7 +47,7 @@ function startLevel(map) {
             map.placeObject(x, y, 'water');
 
     map.placeObject(map.getWidth()-1, map.getHeight()-1, 'exit');
-#END_OF_START_LEVEL#
+/*#END_OF_START_LEVEL#*/
 }
 
 function validateLevel(map) {

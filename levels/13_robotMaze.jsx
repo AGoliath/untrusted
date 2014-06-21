@@ -1,10 +1,10 @@
-#BEGIN_PROPERTIES#
+/*#BEGIN_PROPERTIES#*/
 {
     "version": "1.2",
     "commandsIntroduced": ["map.getAdjacentEmptyCells"],
     "music": "Searching"
 }
-#END_PROPERTIES#
+/*#END_PROPERTIES#*/
 /*
  * robotMaze.js
  *
@@ -16,7 +16,7 @@
  */
 
 function startLevel(map) {
-#START_OF_START_LEVEL#
+/*#START_OF_START_LEVEL#*/
     // Hint: you can press R or 5 to "rest" and not move the
     // player, while the robot moves around.
 
@@ -35,7 +35,7 @@ function startLevel(map) {
             me.giveItemTo(player, 'blueKey');
         },
         'behavior': function (me) {
-#BEGIN_EDITABLE#
+/*#BEGIN_EDITABLE#*/
             // move randomly
             var moves = map.getAdjacentEmptyCells(me.getX(), me.getY());
             // getAdjacentEmptyCells gives array of ((x, y), direction) pairs
@@ -85,7 +85,7 @@ function startLevel(map) {
 
 
 
-#END_EDITABLE#
+/*#END_EDITABLE#*/
         }
     });
 
@@ -112,7 +112,7 @@ function startLevel(map) {
             map.placeObject(x,y,'empty');
         }
     });
-#END_OF_START_LEVEL#
+/*#END_OF_START_LEVEL#*/
 }
 
 function validateLevel(map) {

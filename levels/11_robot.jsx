@@ -1,4 +1,4 @@
-#BEGIN_PROPERTIES#
+/*#BEGIN_PROPERTIES#*/
 {
     "version": "1.2",
     "commandsIntroduced":
@@ -6,7 +6,7 @@
          "map.validateAtMostXObjects"],
     "music": "conspiracy"
 }
-#END_PROPERTIES#
+/*#END_PROPERTIES#*/
 /*
  * robot.js
  *
@@ -27,7 +27,7 @@ function getRandomInt(min, max) {
 }
 
 function startLevel(map) {
-#START_OF_START_LEVEL#
+/*#START_OF_START_LEVEL#*/
     // Hint: you can press R or 5 to "rest" and not move the
     // player, while the robot moves around.
 
@@ -42,13 +42,13 @@ function startLevel(map) {
             me.giveItemTo(player, 'redKey');
         },
         'behavior': function (me) {
-#BEGIN_EDITABLE#
+/*#BEGIN_EDITABLE#*/
             // Available commands: me.move(direction)
             //                 and me.canMove(direction)
 
 
 
-#END_EDITABLE#
+/*#END_EDITABLE#*/
         }
     });
 
@@ -75,7 +75,7 @@ function startLevel(map) {
         map.placeObject(0, y, 'block');
         map.placeObject(map.getWidth() - 1, y, 'block');
     }
-#END_OF_START_LEVEL#
+/*#END_OF_START_LEVEL#*/
 }
 
 function validateLevel(map) {

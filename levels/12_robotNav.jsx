@@ -1,10 +1,10 @@
-#BEGIN_PROPERTIES#
+/*#BEGIN_PROPERTIES#*/
 {
     "version": "1.2",
     "commandsIntroduced": [],
     "music": "Messeah"
 }
-#END_PROPERTIES#
+/*#END_PROPERTIES#*/
 /*
  * robotNav.js
  *
@@ -14,7 +14,7 @@
  */
 
 function startLevel(map) {
-#START_OF_START_LEVEL#
+/*#START_OF_START_LEVEL#*/
     // Hint: you can press R or 5 to "rest" and not move the
     // player, while the robot moves around.
 
@@ -29,7 +29,7 @@ function startLevel(map) {
             me.giveItemTo(player, 'greenKey');
         },
         'behavior': function (me) {
-#BEGIN_EDITABLE#
+/*#BEGIN_EDITABLE#*/
             if (me.canMove('right')) {
                 me.move('right');
             } else {
@@ -46,7 +46,7 @@ function startLevel(map) {
 
 
 
-#END_EDITABLE#
+/*#END_EDITABLE#*/
         }
     });
 
@@ -78,7 +78,7 @@ function startLevel(map) {
         map.placeObject(20 - i, i + 1, 'block');
         map.placeObject(35 - i, 8 - i, 'block');
     }
-#END_OF_START_LEVEL#
+/*#END_OF_START_LEVEL#*/
 }
 
 function validateLevel(map) {

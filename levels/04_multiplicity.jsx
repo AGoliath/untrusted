@@ -1,10 +1,10 @@
-#BEGIN_PROPERTIES#
+/*#BEGIN_PROPERTIES#*/
 {
     "version": "1.2",
     "commandsIntroduced": [],
     "music": "coming soon"
 }
-#END_PROPERTIES#
+/*#END_PROPERTIES#*/
 /*******************
  * multiplicity.js *
  *******************
@@ -19,7 +19,7 @@
  */
 
 function startLevel(map) {
-#START_OF_START_LEVEL#
+/*#START_OF_START_LEVEL#*/
 
     map.placePlayer(map.getWidth()-5, map.getHeight()-4);
 
@@ -27,14 +27,14 @@ function startLevel(map) {
         map.placeObject(7, y, 'block');
         map.placeObject(map.getWidth() - 3, y, 'block');
     }
-#BEGIN_EDITABLE#
+/*#BEGIN_EDITABLE#*/
 
-#END_EDITABLE#
+/*#END_EDITABLE#*/
     for (x = 7; x <= map.getWidth() - 3; x++) {
         map.placeObject(x, 7, 'block');
         map.placeObject(x, map.getHeight() - 3, 'block');
     }
 
     map.placeObject(map.getWidth() - 5, 5, 'exit');
-#END_OF_START_LEVEL#
+/*#END_OF_START_LEVEL#*/
 }

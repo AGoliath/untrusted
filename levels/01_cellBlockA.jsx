@@ -1,4 +1,4 @@
-#BEGIN_PROPERTIES#
+/*#BEGIN_PROPERTIES#*/
 {
     "version": "1.2",
     "commandsIntroduced":
@@ -7,7 +7,7 @@
          "map.displayChapter", "map.getPlayer", "player.hasItem"],
     "music": "The Green"
 }
-#END_PROPERTIES#
+/*#END_PROPERTIES#*/
 /*****************
  * cellBlockA.js *
  *****************
@@ -31,11 +31,11 @@
  */
 
 function startLevel(map) {
-#START_OF_START_LEVEL#
+/*#START_OF_START_LEVEL#*/
     map.displayChapter('Chapter 1\nBreakout');
 
     map.placePlayer(7, 5);
-#BEGIN_EDITABLE#
+/*#BEGIN_EDITABLE#*/
 
     for (y = 3; y <= map.getHeight() - 10; y++) {
         map.placeObject(5, y, 'block');
@@ -46,12 +46,12 @@ function startLevel(map) {
         map.placeObject(x, 3, 'block');
         map.placeObject(x, map.getHeight() - 10, 'block');
     }
-#END_EDITABLE#
+/*#END_EDITABLE#*/
 
     map.placeObject(15, 12, 'computer');
 
     map.placeObject(map.getWidth()-7, map.getHeight()-5, 'exit');
-#END_OF_START_LEVEL#
+/*#END_OF_START_LEVEL#*/
 }
 
 function onExit(map) {

@@ -1,4 +1,4 @@
-#BEGIN_PROPERTIES#
+/*#BEGIN_PROPERTIES#*/
 {
     "version": "1.2",
 	"commandsIntroduced":
@@ -6,7 +6,7 @@
          "object.getX", "object.getY", "object.canMove", "object.move"],
     "music": "GameScratch"
 }
-#END_PROPERTIES#
+/*#END_PROPERTIES#*/
 
 /****************
  * drones101.js *
@@ -20,7 +20,7 @@
  */
 
 function startLevel(map) {
-#START_OF_START_LEVEL#
+/*#START_OF_START_LEVEL#*/
     function moveToward(obj, type) {
         var target = obj.findNearest(type);
         var leftDist = obj.getX() - target.x;
@@ -65,13 +65,13 @@ function startLevel(map) {
     map.placeObject(map.getWidth()-2, 11, 'block');
     map.placeObject(map.getWidth()-1, 13, 'block');
     map.placeObject(map.getWidth()-2, 13, 'block');
-#BEGIN_EDITABLE#
+/*#BEGIN_EDITABLE#*/
 
 
 
 
-#END_EDITABLE#
-#END_OF_START_LEVEL#
+/*#END_EDITABLE#*/
+/*#END_OF_START_LEVEL#*/
 }
 
 function validateLevel(map) {

@@ -1,4 +1,4 @@
-#BEGIN_PROPERTIES#
+/*#BEGIN_PROPERTIES#*/
 {
     "version": "1.2.2",
     "commandsIntroduced": ["player.move", "map.startTimer"],
@@ -7,7 +7,7 @@
         "keyDelay": 25
     }
 }
-#END_PROPERTIES#
+/*#END_PROPERTIES#*/
 /**********************
  * superDrEvalBros.js *
  **********************
@@ -20,7 +20,7 @@
  */
 
 function startLevel(map) {
-#START_OF_START_LEVEL#
+/*#START_OF_START_LEVEL#*/
     var fl = Math.floor;
     var w = map.getWidth();
     var h = map.getHeight();
@@ -58,7 +58,7 @@ function startLevel(map) {
     map.startTimer(gravity, 45);
 
     function jump() {
-#BEGIN_EDITABLE#
+/*#BEGIN_EDITABLE#*/
 
 
 
@@ -66,7 +66,7 @@ function startLevel(map) {
 
 
 
-#END_EDITABLE#
+/*#END_EDITABLE#*/
     }
 
     player.setPhoneCallback(function () {
@@ -77,7 +77,7 @@ function startLevel(map) {
             jump();
         }
     });
-#END_OF_START_LEVEL#
+/*#END_OF_START_LEVEL#*/
 }
 
 function validateLevel(map) {

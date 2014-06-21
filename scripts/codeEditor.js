@@ -1,13 +1,13 @@
 function CodeEditor(textAreaDomID, width, height, game) {
     var symbols = {
-        'begin_line':'#BEGIN_EDITABLE#',
-        'end_line':'#END_EDITABLE#',
+        'begin_line':'/*#BEGIN_EDITABLE#*/',
+        'end_line':'/*#END_EDITABLE#*/',
         'begin_char':"#{#",
         'end_char': "#}#",
-        'begin_properties':'#BEGIN_PROPERTIES#',
-        'end_properties':'#END_PROPERTIES#',
-        'start_start_level':'#START_OF_START_LEVEL#',
-        'end_start_level':'#END_OF_START_LEVEL#'
+        'begin_properties':'/*#BEGIN_PROPERTIES#*/',
+        'end_properties':'/*#END_PROPERTIES#*/',
+        'start_start_level':'/*#START_OF_START_LEVEL#*/',
+        'end_start_level':'/*#END_OF_START_LEVEL#*/'
     };
 
     var charLimit = 80;
@@ -450,8 +450,8 @@ function CodeEditor(textAreaDomID, width, height, game) {
 
     this.createGist = function () {
         var lvlNum = game._currentLevel;
-        var filename = 'untrusted-lvl' + lvlNum + '-solution.js';
-        var description = 'Solution to level ' + lvlNum + ' in Untrusted: http://alex.nisnevich.com/untrusted/';
+        var filename = 'untrusted-challenges-lvl' + lvlNum + '-solution.js';
+        var description = 'Solution to level ' + lvlNum + ' in Untrusted Challenges: https://github.com/AGoliath/untrusted';
         var data = {
             'files': {},
             'description': description,
