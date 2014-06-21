@@ -13,7 +13,9 @@ function Game(debugMode, startLevel) {
     };
 
     this._levelFileNames = [
-        '01_cellBlockA.jsx',
+     '101_Welcome.jsx',
+        '102_noWayOut.jsx',
+      '01_cellBlockA.jsx',
         '02_theLongWayOut.jsx',
         '03_validationEngaged.jsx',
         '04_multiplicity.jsx',
@@ -38,7 +40,7 @@ function Game(debugMode, startLevel) {
     ];
 
     this._viewableScripts = [
-        'codeEditor.js',
+      /*  'codeEditor.js',
         'display.js',
         'dynamicObject.js',
         'game.js',
@@ -50,7 +52,7 @@ function Game(debugMode, startLevel) {
         'sound.js',
         'ui.js',
         'util.js',
-        'validate.js'
+        'validate.js'  */
     ];
 
     this._editableScripts = [
@@ -207,7 +209,7 @@ function Game(debugMode, startLevel) {
         if (movingToNextLevel) {
             // save level state and create a gist
             editor.saveGoodState();
-            editor.createGist();
+            if (!debugMode)  editor.createGist();
         }
 
         game._currentLevel = levelNum;
@@ -257,7 +259,7 @@ function Game(debugMode, startLevel) {
         $.get(filePath, function (code) {
             // load level code in editor
             if (game._editableScripts.indexOf(fileName) > -1) {
-                game.editor.loadCode('#BEGIN_EDITABLE#\n' + code + '\n#END_EDITABLE#');
+                game.editor.loadCode('/*#BEGIN_EDITABLE#*/\n' + code + '\n/*#END_EDITABLE#*/');
             } else {
                 game.editor.loadCode(code);
             }
